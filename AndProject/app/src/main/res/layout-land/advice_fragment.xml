@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andproject.views.AdviceFragment"
+   >
+
+
+    <TextView
+        android:id="@+id/adviceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorSecondary"
+        android:text="Word(s) to the wise"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/advice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adviceLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginLeft="223dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/getadvicebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="295dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginRight="262dp"
+        android:layout_marginBottom="121dp"
+        android:text="Get wiser" />
+
+</RelativeLayout>

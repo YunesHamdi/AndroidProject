@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme.BaseNoActionBar">
+        <activity android:name="com.example.andproject.MyAppIntro"></activity>
+        <activity
+            android:name="com.example.andproject.ProfileActivity"
+            android:parentActivityName="com.example.andproject.MainActivity" />
+        <activity android:name="com.example.andproject.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.andproject.views.GetOtherWorkout"
+            android:parentActivityName="com.example.andproject.MainActivity" />
+        <activity
+            android:name="com.example.andproject.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.andproject.views.AddJournalEntry"
+            android:parentActivityName="com.example.andproject.MainActivity" />
+    </application>
+
+</manifest>
